@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Golden Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="home">Golden Tech</div>
+
+        <div class="menu-container">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+       </div>
+        <div class="nav-right">
+            <a href="" class="nav-link">Gallery</a>
+            <a  href="" class="nav-link">Services</a>
+            <a href="" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+   
+    <div class="introduction">
+        <h1>THE GOLDEN TECH</h1>
+        <H2>PROFESSIONAL WEB DEVELOPERS</H2>
+        <p>Are you looking for professional web designers/developers ? Are you ready to take your bussiness
+            to the Next Level? Well this is your Lucky Day. Our team of Engineers and Developers are the best. we've got you.
+            we design, develop and manage websites at affordable prices while offering  the best Services. Want to talk ? Contact
+            us through any of our handles. we'll get back to you within 7 hours.  
+        </p>
+        <button class="intro-button right">Contact Us</button>
+        <button class="intro-button left">More INFO</button>
+    </div>
+   
+    <div class="contact-container" id="contact">
+        <a  href="" class="link"> <i class="fab fa-twitter"></i></a>
+        <a href="" class="link"><i class="fab fa-facebook-square"></i></a>
+        <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        <a href="" class="link"><i class="fas fa-at"></i></a>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector('.menu-container')
+       const links =  document.querySelectorAll('.nav-link');
+        const navRight = document.querySelector('.nav-right')
+       function handleMenu(){
+           navRight.classList.toggle('on')
+       }
+       menu.addEventListener('click',handleMenu)
+    </script>
+</body>
+</html>
